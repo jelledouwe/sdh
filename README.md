@@ -41,7 +41,7 @@ And for the simulated hand:
   roslaunch schunk_bringup main.launch sim:=true
 ```
 
-This will launch a gazebo simulation
+This will launch a gazebo simulation.
 
 ## SDH interface
 
