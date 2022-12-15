@@ -17,7 +17,7 @@ Then install the dependencies:
   rosdep install --from-paths src --ignore-src -r -y
 ```
 
-Then install the package:
+Then build/make the package:
 
 ```console
   catkin_make
