@@ -83,5 +83,5 @@ To ease controlling the hand, there is an SDH interface.
 
 ## Credits
 
-Files adapted from Fraunhofer Institute for Manufacturing Engineering and Automation (IPA).
-Also adapted files from @padmaja-kulkarni.
+Files adapted from [Fraunhofer Institute for Manufacturing Engineering and Automation (IPA)](https://github.com/ipa320/schunk_modular_robotics).
+Also adapted files from [@padmaja-kulkarni](https://github.com/padmaja-kulkarni).
