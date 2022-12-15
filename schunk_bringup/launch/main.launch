@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="sim" default="false"/>
+
+    <group unless="$(arg sim)">
+        <include file="$(find schunk_bringup)/launch/schunk_bringup.launch" />
+        <node pkg="rosservice" type="rosservice" name="sdh_controller_init" args="call --wait /sdh_controller/init" />
+        <include file="$(find openni2_launch)/launch/openni2.launch" />
+    </group>
+
+    <group  if="$(arg sim)">
+        <include file="$(find sdh_gazebo)/launch/sdh_world.launch">
+            <arg name="gui" value="$(arg gui)"/>
+        </include>
+    </group>
+</launch>
