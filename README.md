@@ -81,5 +81,7 @@ To ease controlling the hand, there is an SDH interface.
     sdhi.cmdGoToStartPos()
 ```
 
+## Credits
 
-
+Files adapted from Fraunhofer Institute for Manufacturing Engineering and Automation (IPA).
+Also adapted files from @padmaja-kulkarni.
