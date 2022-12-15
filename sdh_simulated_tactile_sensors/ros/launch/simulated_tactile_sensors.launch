@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<launch>
+
+	<node pkg="sdh_simulated_tactile_sensors" type="simulated_tactile_sensors.py" name="dsa_controller" output="screen">
+		<!-- The number of patches on the tactile sensor in the direction perpendicular to the finger -->
+		<param name="cells_x" value="6" />
+
+		<!-- The number of patches on the tactile sensor along the direction of the finger -->
+		<param name="cells_y" value="14" />
+
+		<!-- The maximum output value of one patch -->
+		<param name="output_range" value="3500.0" />
+                
+		<!-- Length of the moving average filter which smoothes simulation output -->
+		<param name="filter_length" value="3" />
+                
+                <!-- Width of the texels in mm-->
+                <param name="texel_width" value="3.4" />
+                
+                <!-- Heigth of the texels in mm-->
+                <param name="texel_height" value="3.4" />
+                
+                <!-- Force threshold before considering contact-->
+                <param name="contact_force_cell_threshold" value="0.001" />
+                
+                <!-- Sensitivity of tactile cells-->
+                <param name="sensitivity" value="10.0" />
+                
+                <!-- Publish rate-->
+                <param name="rate" value="60.0" />
+	</node>
+
+</launch>

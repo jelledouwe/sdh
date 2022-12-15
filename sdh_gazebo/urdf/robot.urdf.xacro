@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="sdh" >
+
+  <!-- common stuff -->
+  <xacro:include filename="$(find schunk_description)/urdf/common.xacro" />
+  <xacro:include filename="$(find schunk_description)/urdf/materials.urdf.xacro" />
+  
+
+  <!-- schunk SDH -->
+  <xacro:include filename="$(find sdh_gazebo)/urdf/sdh.urdf.xacro" />
+
+  <!-- Used for fixing robot to Gazebo -->
+  <link name="world"/>
+
+  <!-- hand -->
+  <xacro:schunk_sdh name="sdh" parent="world">
+    <origin xyz="0 0 0.5" rpy="0 ${pi} 0" /> <!--slightly above gazebo plane-->
+  </xacro:schunk_sdh>
+
+</robot>
+
