@@ -9,8 +9,6 @@
     </group>
 
     <group  if="$(arg sim)">
-        <include file="$(find sdh_gazebo)/launch/sdh_world.launch">
-            <arg name="gui" value="$(arg gui)"/>
-        </include>
+        <include file="$(find sdh_gazebo)/launch/sdh_world.launch" />
     </group>
 </launch>

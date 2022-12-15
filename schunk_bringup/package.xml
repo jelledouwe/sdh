@@ -11,8 +11,8 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
-  <run_depend>openni2_launch</run_depend>
-  <run_depend>schunk_sdh_ros</run_depend>
+  <exec_depend>openni2_launch</exec_depend>
+  <exec_depend>schunk_sdh_ros</exec_depend>
 
 
 </package>
