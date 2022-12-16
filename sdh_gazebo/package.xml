@@ -15,7 +15,7 @@
   
   <build_depend>cob_gazebo_ros_control</build_depend>
   <run_depend>cob_gazebo_ros_control</run_depend>
-  
+  <run_depend>sdh_simulated_tactile_sensors</run_depend>
   <run_depend>gazebo_plugins</run_depend>
   <run_depend>gazebo_ros</run_depend>
   <run_depend>gazebo_ros_control</run_depend>

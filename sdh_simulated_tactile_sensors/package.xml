@@ -51,7 +51,7 @@
   <!-- <url type="bugtracker"></url> -->
 
   <author>Sven Schneider</author>
-  <maintainer email="bfb@ipa.fhg.de">Bruno Brito</maintainer>
+  <maintainer email="jdluijkx@gmail.com">Jelle Luijkx</maintainer>
 
   <buildtool_depend>catkin</buildtool_depend>
 
